@@ -27,7 +27,7 @@ public class IntermediateQuestionBank {
 
 	public static int questionsIntermediateDM2(int score) {
 		System.out.printf("CATEGORY: Discrete Mathmatics\n"
-				+ "In a Knights and Knaves scenario. A and B. A says, \"B is a Knight.\" A says nothing.\n"
+				+ "In a Knights and Knaves scenario. A and B. A says, \"B is a Knight.\" B says nothing.\n"
 				+ "Based on A's statement, which of the following conclusions can you draw about B?\n" 
 				+ "A. A is a Knight, and B is a Knight.\n"
 				+ "B. A is a Knight, and B is a Knave.\n" 
