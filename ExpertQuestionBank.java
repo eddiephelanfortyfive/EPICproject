@@ -7,7 +7,8 @@ public class ExpertQuestionBank {
 	private int score;
 	
 	public static int questionsExpertDM1(int score) {
-
+		// does this work in vim?
+		// this should works
 		System.out.printf("CATEGORY: \n"
 				+ "\n" 
 				+ "A.\n" 
