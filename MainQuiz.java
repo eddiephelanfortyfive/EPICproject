@@ -1,10 +1,16 @@
 package EPIC;
-
+import java.io.File;
+import java.io.FileWriter;
+import java.io.FileReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.util.Scanner;
+
 
 public class MainQuiz {
 	public static void main(String[] args) {
 		int score = 0;
+		LoginToQuiz username = new LoginToQuiz();
 		System.out.println("Are you ready to begin?: Y/N");
 		Scanner scanner = new Scanner(System.in);
 		String begin = scanner.nextLine();
@@ -24,7 +30,7 @@ public class MainQuiz {
 		ExpertQuestionBank Score3 = new ExpertQuestionBank(score);
 		score = Score3.RoundThreeScore();
 		System.out.print(score);
-	
+	scanner.close();
 	}
 
 }
