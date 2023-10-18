@@ -28,16 +28,16 @@ public class IntermediateQuestionBank {
 	public static int questionsIntermediateDM2(int score) {
 		System.out.printf("CATEGORY: Discrete Mathmatics\n"
 				+ "In a Knights and Knaves scenario. A and B. A says, \"B is a Knight.\" A says nothing.\n"
-				+ "\n" 
-				+ "A. Based on A's statement, which of the following conclusions can you draw about B?\n" 
-				+ "B.\n" 
-				+ "C.\n" 
-				+ "D.\n"
+				+ "Based on A's statement, which of the following conclusions can you draw about B?\n" 
+				+ "A. A is a Knight, and B is a Knight.\n"
+				+ "B. A is a Knight, and B is a Knave.\n" 
+				+ "C. A is a Knave, and B is a Knave.\n" 
+				+ "D. A is a Knave, and B is a Knight.\n"
 				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
-		if (input.equals("")) {
+		if (input.equals("d")) {
 			score++;
 		}
 		return score;
