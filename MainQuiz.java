@@ -1,27 +1,23 @@
 package EPIC;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.util.Scanner;
 
+import java.util.Scanner;
 
 public class MainQuiz {
 	public static void main(String[] args) {
 		int score = 0;
 		LoginToQuiz username = new LoginToQuiz();
+		String username1 = username.LoginToQuiz();
 		System.out.println("Are you ready to begin?: Y/N");
 		Scanner scanner = new Scanner(System.in);
 		String begin = scanner.nextLine();
 		begin = begin.toLowerCase();
 		if (begin.equals("y")) {
 		} else if (begin.equals("n")) {
-			
+
 			System.out.println("okay see you next time!");
 			System.exit(0);
 		} else {
-			System.out.print("Invalid input");
+			System.out.println("Invalid input");
 		}
 		NoviceQuestionBank Score1 = new NoviceQuestionBank(score);
 		score = Score1.RoundOneScore();
@@ -29,8 +25,10 @@ public class MainQuiz {
 		score = Score2.RoundTwoScore();
 		ExpertQuestionBank Score3 = new ExpertQuestionBank(score);
 		score = Score3.RoundThreeScore();
-		System.out.print(score);
-	scanner.close();
+		//System.out.print(score);
+		TextWriter scoreWriter = new TextWriter(username1, score);
+		//TextReader scoreReader = new TextReader(username1);
+		scanner.close();
 	}
 
 }
