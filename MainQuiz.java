@@ -25,9 +25,9 @@ public class MainQuiz {
 		score = Score2.RoundTwoScore();
 		ExpertQuestionBank Score3 = new ExpertQuestionBank(score);
 		score = Score3.RoundThreeScore();
-		//System.out.print(score);
+		System.out.println(score);
 		TextWriter scoreWriter = new TextWriter(username1, score);
-		//TextReader scoreReader = new TextReader(username1);
+		TextReader scoreReader = new TextReader(username1);
 		scanner.close();
 	}
 

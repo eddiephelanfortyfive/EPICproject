@@ -1,6 +1,6 @@
 package EPIC;
 import java.io.File;
-
+import java.io.FileWriter;
 //import java.io.FileWriter;
 //import java.io.FileReader;
 //import java.io.BufferedReader;
@@ -14,10 +14,19 @@ public class LoginToQuiz {
         System.out.println("Please enter your username: ");
         String username = scanner.nextLine();
         File pastUsersFile = new File(username + ".txt");
+        File usernameHolder = new File("UserNameHolder.txt");
         
-        try {
+        
+        
+        try { 
+        	if (!usernameHolder.exists()) {
+        		usernameHolder.createNewFile();}
+        	
             if (!pastUsersFile.exists()) {
                 pastUsersFile.createNewFile();
+    			FileWriter writer = new FileWriter("UserNameHolder.txt", true);
+    			writer.write( username+".txt" + "\n");
+    			writer.close();
                 System.out.printf("Welcome %s you have created a new account.\n",username);
             }
             else if (pastUsersFile.exists()) {System.out.printf("Welcome Back %s you have logged in.\n",username);}
@@ -30,6 +39,7 @@ public class LoginToQuiz {
     }
     
 }
+
 /*try {
 FileWriter writer = new FileWriter(pastUsersFile, true); 
 writer.write(score + "\n");
