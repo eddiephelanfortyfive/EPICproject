@@ -9,13 +9,13 @@ public class ExpertQuestionBank {
 	public static int questionsExpertDM1(int score) {
 		
 		System.out.printf("CATEGORY: Discrete Maths\n"
-				"Which of the following is a property of an equivalence relation in set theory?\n"
+				+"Which of the following is a property of an equivalence relation in set theory?\n"
 				+"	A. Reflexivity\n"
 				+ "\n"
 				+"	B. Injectivity\n"
 				+ "\n"
 				+"	C. Linearity\n"
-				+ "\n
+				+ "\n"
 				+"	D. Partiality\n"
 				+ "\n"
 				+"Enter answer:\n");
@@ -102,7 +102,7 @@ public class ExpertQuestionBank {
 	
 	public static int questionsExpertCSF1(int score) {
 		System.out.printf("CATEGORY:Computer Science Foundations \n"
-				"In computer science, what is the purpose of an \"API\" (Application Programming Interface), and why is it a crucial concept in software development?\n"
+				+"In computer science, what is the purpose of an \"API\" (Application Programming Interface), and why is it a crucial concept in software development?\n"
 				+ "\n"
 				+ "A. An API is a type of software testing tool, and it is crucial for identifying and fixing software bugs.\n"
 				+ "\n"
