@@ -23,8 +23,6 @@ public class StatsForMaths {
 		
 		ArrayList<Double> resultStats = new ArrayList<Double>();
 
-		ArrayList<String> playerStats = new ArrayList<String>();
-
 		
 		// Create an ArrayList of Doubles from all of the quiz entries
 		for (int i = 0; i < listOfAllQuizEntries.size(); i++ ) {
@@ -34,10 +32,10 @@ public class StatsForMaths {
              String[] values = listOfAllQuizEntries.get(i).split(",");
              
              //translates string (score) into a double (score)
-             double str1 = Double.parseDouble(values[1]);
+             double scoreAsDouble = Double.parseDouble(values[1]);
              
             
-             points.add(str1);
+             points.add(scoreAsDouble);
              
         // 	System.out.println(str1);
 			 		 
@@ -107,7 +105,6 @@ public class StatsForMaths {
 	        
 		}				
 	
-	
 	public ArrayList<Double> getPlayerStats(String username) {
 
 		TextReader csvFileRead = new TextReader();
@@ -120,8 +117,6 @@ public class StatsForMaths {
 		
 		ArrayList<Double> resultStats = new ArrayList<Double>();
 	
-		ArrayList<Double> playerStats = new ArrayList<Double>();
-	
 		
 		// Create an ArrayList of Doubles from all of the quiz entries
 		for (int i = 0; i < listOfAllQuizEntries.size(); i++ ) {
@@ -131,10 +126,10 @@ public class StatsForMaths {
 	         String[] values = listOfAllQuizEntries.get(i).split(",");
 	         
 	         //translates string (score) into a double (score)
-	         double str1 = Double.parseDouble(values[1]);
-	         
+	         double scoreAsDouble = Double.parseDouble(values[1]);
+	         //the if statement only collects quiz entries for this particular username
 	         if (username.equals(values[0])) {
-	        	 points.add(str1);
+	        	 points.add(scoreAsDouble);
 	         
 	         } 			 		 
 		}
@@ -205,6 +200,7 @@ public class StatsForMaths {
 		}		
 	
 	public ArrayList<String> compareStats(ArrayList<Double> playerStats, ArrayList<Double> allStats) {
+
 		
 		ArrayList<String> comparison = new ArrayList<String>();
 	
@@ -242,5 +238,6 @@ public class StatsForMaths {
 		return comparison;
 		
 		
-		}	
+		}
+	
 	}

@@ -9,8 +9,13 @@ public class NoviceQuestionBank {
 	public static int questionsNoviceDM1(int score) {
 
 		System.out.printf("CATEGORY: Descrete Mathmatics\n"
-				+ "	Which of the following represents the intersection of two sets A and B\n" + "\n" + "A. A - B\n"
-				+ "B. A ∪ B\n" + "C. A ∩ B\n" + "D. A × B\n" + "Enter answer:\n");
+				+ "	Which of the following represents the intersection of two sets A and B\n" 
+				+ "\n"
+				+ "A. A - B\n"
+				+ "B. A ∪ B\n"
+				+ "C. A ∩ B\n"
+				+ "D. A × B\n" 
+				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
@@ -21,12 +26,16 @@ public class NoviceQuestionBank {
 		return score;
 	}
 
-	public static int questionsNoviceMD2(int score) {
-		System.out.printf("CATEGORY: Descrete Mathmatics\n" + "	What is the result of the following expression?\n"
-				+ "(A AND B) OR (NOT C)\n" + "A. True if A and B are both true, regardless of C. \n"
+	public static int questionsNoviceDM2(int score) {
+		System.out.printf("CATEGORY: Descrete Mathmatics\n"
+				+ "	What is the result of the following expression?\n"
+				+"\n"
+				+ "(A AND B) OR (NOT C)\n" 
+				+ "A. True if A and B are both true, regardless of C. \n"
 				+ "B. True if either A and B are true or C is false.\n"
 				+ "C. True if A and B are both true and C is false. \n"
-				+ "D. True if A is true, B is false, and C is true.\n" + "Enter answer:\n");
+				+ "D. True if A is true, B is false, and C is true.\n"
+				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
@@ -38,8 +47,13 @@ public class NoviceQuestionBank {
 
 	public static int questionsNoviceCSF1(int score) {
 		System.out.printf("CATEGORY: Computer Science Foundation\n"
-				+ "Which one of these statments relates to ¬(A∨B):\n" + "A: A AND B\n" + "B: A OR B\n"
-				+ "C: The negation of A AND B\n" + "D: The negation of A OR B\n"+ "Enter answer:\n");
+				+ "Which one of these statments relates to ¬(A∨B):\n"
+				+"\n"
+				+ "A: A AND B\n" 
+				+ "B: A OR B\n"
+				+ "C: The negation of A AND B\n"
+				+ "D: The negation of A OR B\n"
+				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
@@ -52,7 +66,11 @@ public class NoviceQuestionBank {
 	public static int questionsNoviceCSF2(int score) {
 		System.out.printf("CATEGORY: Computer Science Foundation\n"
 				+ "Which of the following is a universal set containing all the elements in a specific context?	\n"
-				+ "\n" + "A.Power set \n" + "B.Subset \n" + "C.Conplament set \n" + "D.Sample space \n"
+				+ "\n" 
+				+ "A.Power set \n" 
+				+ "B.Subset \n" 
+				+ "C.Conplament set \n" 
+				+ "D.Sample space \n"
 				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
@@ -64,10 +82,14 @@ public class NoviceQuestionBank {
 	}
 
 	public static int questionsNoviceCOR1(int score) {
-		System.out
-				.printf("CATEGORY: Computer Organisation\n" + "	What is the primary function of an operating system?\n"
-						+ "\n" + "A. Running applications \n" + "B. Storing data \n"
-						+ "C. Managing hardware and resources \n" + "D. Creating Websites \n" + "Enter answer:\n");
+		System.out.printf("CATEGORY: Computer Organisation\n" 
+				+ "	What is the primary function of an operating system?\n"		
+				+ "\n" 
+				+ "A. Running applications \n"
+				+ "B. Storing data \n"	
+				+ "C. Managing hardware and resources \n" 
+				+ "D. Creating Websites \n"
+				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
@@ -80,7 +102,11 @@ public class NoviceQuestionBank {
 	public static int questionsNoviceCOR2(int score) {
 		System.out.printf("CATEGORY: Computer Organisation\n"
 				+ "	What is the term for a high-level programming language that is easy to read and write, often used for teaching programming concepts?\n"
-				+ "\n" + "A. Assembly language\n" + "B. Machine code\n" + "C. Python\n" + "D. Binary code\n"
+				+ "\n" 
+				+ "A. Assembly language\n" 
+				+ "B. Machine code\n"
+				+ "C. Python\n" 
+				+ "D. Binary code\n"
 				+ "Enter answer:\n");
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
@@ -114,7 +140,7 @@ public class NoviceQuestionBank {
 				score = questionsNoviceDM1(score);
 			} else if (questionNumber == 1&&count1==0) {
 				count1++;
-				score = questionsNoviceMD2(score);
+				score = questionsNoviceDM2(score);
 			} else if (questionNumber == 2&&count2==0) {
 				count2++;
 				score = questionsNoviceCSF1(score);
