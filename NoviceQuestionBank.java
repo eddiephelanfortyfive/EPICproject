@@ -95,25 +95,39 @@ public class NoviceQuestionBank {
 	public NoviceQuestionBank(int score) {
 
 		Random rand = new Random();
+		int count0=0;
+		int count1=0;
+		int count2=0;
+		int count3=0;
+		int count4=0;
+		int count5=0;
 		int maximum = 5;
 		System.out
-				.printf("|-----------------------|\n" + "|ROUND ONE LEVEL: NOVICE|\n" + "|-----------------------|\n");
+				.printf("|-----------------------|\n" 
+						+ "|ROUND ONE LEVEL: NOVICE|\n" 
+						+ "|-----------------------|\n");
 		for (int i = 1; i <= 2; i++) {
 			System.out.printf("Question %d\n", i);
 			int questionNumber = rand.nextInt(maximum);
-			if (questionNumber == 0) {
+			if (questionNumber == 0&&count0==0) {
+				count0++;
 				score = questionsNoviceDM1(score);
-			} else if (questionNumber == 1) {
+			} else if (questionNumber == 1&&count1==0) {
+				count1++;
 				score = questionsNoviceMD2(score);
-			} else if (questionNumber == 2) {
+			} else if (questionNumber == 2&&count2==0) {
+				count2++;
 				score = questionsNoviceCSF1(score);
-			} else if (questionNumber == 3) {
+			} else if (questionNumber == 3&&count3==0) {
+				count3++;
 				score = questionsNoviceCSF2(score);
-			} else if (questionNumber == 4) {
+			} else if (questionNumber == 4&&count4==0) {
+				count4++;
 				score = questionsNoviceCOR1(score);
-			} else if (questionNumber == 5) {
+			} else if (questionNumber == 5&&count5==0) {
+				count5++;
 				score = questionsNoviceCOR2(score);
-			}
+			}else {i--;}
 			
 		}
 		this.score=score;
