@@ -15,12 +15,18 @@ public class IntermediateQuestionBank {
 				+ "C. The domain is the set of all possible inputs, and the codomain is a single output value\n" 
 				+ "D. The domain and codomain of a function are the same set\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
@@ -35,12 +41,18 @@ public class IntermediateQuestionBank {
 				+ "C. A is a Knave, and B is a Knave.\n" 
 				+ "D. A is a Knave, and B is a Knight.\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("d")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("d")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 	
@@ -53,12 +65,18 @@ public class IntermediateQuestionBank {
 				+ "C. A method for designing computer hardware\n" 
 				+ "D. A language used for low-level system programming\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("b")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("b")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -71,12 +89,18 @@ public class IntermediateQuestionBank {
 				+ "C. (X ∧ Y) ∨ (X ∨ Y)\n" 
 				+ "D. ¬(X ∧ Y) ≡ ¬(¬X ∨ ¬Y)\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -89,12 +113,18 @@ public class IntermediateQuestionBank {
 				+ "C. Fetch, Decode, Execute cycle\n" 
 				+ "D. Provides power to the computer\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("b")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("b")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -108,12 +138,18 @@ public class IntermediateQuestionBank {
 				+ "C. To manage memory allocation\n" 
 				+ "D. To control input/output devices\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 

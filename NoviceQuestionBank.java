@@ -23,13 +23,18 @@ public class NoviceQuestionBank {
 				+ "C. A ∩ B\n"
 				+ "D. A × B\n" 
 				+ "Enter answer:\n");
+		for (int i=0; i<1; i++) {
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
+		if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
 		if (input.equals("c")) {
 			score++;
 		}
-
+		}else {System.out.printf("Invalid input please try again.\n"
+				+ "Enter answer:\n");
+		i--;}
+		}
 		return score;
 	}
 
@@ -43,12 +48,18 @@ public class NoviceQuestionBank {
 				+ "C. True if A and B are both true and C is false. \n"
 				+ "D. True if A is true, B is false, and C is true.\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -61,12 +72,18 @@ public class NoviceQuestionBank {
 				+ "C: The negation of A AND B\n"
 				+ "D: The negation of A OR B\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("d")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("d")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -79,12 +96,18 @@ public class NoviceQuestionBank {
 				+ "C.Conplament set \n" 
 				+ "D.Sample space \n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("d")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("d")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 
@@ -97,12 +120,19 @@ public class NoviceQuestionBank {
 				+ "C. Managing hardware and resources \n" 
 				+ "D. Creating Websites \n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("c")) {
-			score++;
-		}		return score;
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("c")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
+		return score;
 	}
 
 	public static int questionsNoviceCOR2(int score) {
@@ -114,12 +144,18 @@ public class NoviceQuestionBank {
 				+ "C. Python\n" 
 				+ "D. Binary code\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("c")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("c")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 
 	}

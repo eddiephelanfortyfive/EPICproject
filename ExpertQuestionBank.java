@@ -20,12 +20,18 @@ public class ExpertQuestionBank {
 				+"	D. Partiality\n"
 				+ "\n"
 				+"Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
@@ -43,12 +49,18 @@ public class ExpertQuestionBank {
 				+"D. n!\n"
 				+"\n\n"
 				+"Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("b")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("b")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
@@ -66,12 +78,18 @@ public class ExpertQuestionBank {
 				+"D. To enhance the clock speed of the CPU);"
 				+"\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("b")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("b")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
@@ -91,12 +109,18 @@ public class ExpertQuestionBank {
 				+ "Enter answer:\n");
 		
 
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("b")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("b")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
@@ -115,12 +139,18 @@ public class ExpertQuestionBank {
 				+ "\n"
 				+ "Enter answer: ");
 
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("c")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("c")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		return score;
 	}
 	
@@ -137,12 +167,18 @@ public class ExpertQuestionBank {
 				+ "D. There is no greatest element and no least element.\n"
 				+ "\n"
 				+ "Enter answer:\n");
-		Scanner answer = new Scanner(System.in);
-		String input = answer.nextLine();
-		input = input.toLowerCase();
-		if (input.equals("a")) {
-			score++;
-		}
+		for (int i=0; i<1; i++) {
+			Scanner answer = new Scanner(System.in);
+			String input = answer.nextLine();
+			input = input.toLowerCase();
+			if(input.equals("a")||input.equals("b")||input.equals("c")||input.equals("d")) {
+			if (input.equals("a")) {
+				score++;
+			}
+			}else {System.out.printf("Invalid input please try again.\n"
+					+ "Enter answer:\n");
+			i--;}
+			}
 		
 		return score;
 	}
