@@ -46,7 +46,7 @@ public class ExpertQuestionBank {
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
-		if (input.equals("")) {
+		if (input.equals("b")) {
 			score++;
 		}
 		
@@ -94,7 +94,7 @@ public class ExpertQuestionBank {
 		Scanner answer = new Scanner(System.in);
 		String input = answer.nextLine();
 		input = input.toLowerCase();
-		if (input.equals("a")) {
+		if (input.equals("b")) {
 			score++;
 		}
 		
@@ -121,7 +121,6 @@ public class ExpertQuestionBank {
 		if (input.equals("c")) {
 			score++;
 		}
-		
 		return score;
 	}
 	

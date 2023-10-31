@@ -20,11 +20,7 @@ public class LoginToQuiz {
         // Prompt the player to enter name
         System.out.println("Please enter your username: ");
         String username = scanner.nextLine();
-        
-        /*
-        File pastUsersFile = new File(username + ".txt");
-        File usernameHolder = new File("UserNameHolder.txt");
-        */
+       
         
         File resultsFile = new File("results.csv");
                 
@@ -59,15 +55,6 @@ public class LoginToQuiz {
 
               }
         	
-        	/*
-        	// Looping over the HashMap with the keys (which are usernames) to see if the username has been seen before, if not, add to ArrayList which holds distinct usernames
-        	for (String i : playerArray.keySet()) {
-        		  System.out.println("key: " + i + " value: " + playerArray.get(i));
-    			  playerNames.add(i);
-        		  
-        		}
-        		*/
-        	
      
         	if (playerNames.contains(username)) {
             	System.out.printf("Welcome Back %s you have logged in.\n",username);
@@ -80,27 +67,6 @@ public class LoginToQuiz {
             playerNames.add(username);
 
 
-        	 /* if (!usernameHolder.exists()) {
-        		
-        		usernameHolder.createNewFile();
-        		
-        		}
-        	
-          if (!pastUsersFile.exists()) {
-            	
-                pastUsersFile.createNewFile();
-                
-    			FileWriter writer = new FileWriter("UserNameHolder.txt", true);
-    			writer.write( username+".txt" + "\n");
-    			writer.close();
-    			
-                System.out.printf("Welcome %s you have created a new account.\n",username);
-            }
-            else if (pastUsersFile.exists()) {
-            	System.out.printf("Welcome Back %s you have logged in.\n",username);
-            	} */
-        	
-     //   	scanner.close();
            
         } catch (IOException e) {
             e.printStackTrace(); 
@@ -113,26 +79,6 @@ public class LoginToQuiz {
     
 }
 
-/*try {
-FileWriter writer = new FileWriter(pastUsersFile, true); 
-writer.write(score + "\n");
-writer.close();
-} catch (IOException e) {
-e.printStackTrace();
-} 
-try {
-	 reader = new BufferedReader(new FileReader(pastUsersFile));
-   
-   String line;
-   while ((line = reader.readLine()) != null) {
-       System.out.println(line); 
-   }
-   
-   
-   reader.close();
-} catch (IOException e) {
-   e.printStackTrace(); 
-}*/
 
         
     

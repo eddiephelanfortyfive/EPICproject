@@ -5,6 +5,13 @@ import java.util.Scanner;
 
 public class NoviceQuestionBank {
 	private int score;
+	/*each method contains a question that is printed to the screen.
+	 then the user is prompted to choose one of the four possible answers.
+	 user input's the answer they believe to be correct.
+	 if user inputs a letter that is not A,B,C or D they will get a error message
+	 and the user will be asked to answer again this will repeat until the user enters a valid input
+	 if user answers the question correctly the variable score is increased by 1.
+	 */
 	
 	public static int questionsNoviceDM1(int score) {
 
@@ -95,8 +102,7 @@ public class NoviceQuestionBank {
 		input = input.toLowerCase();
 		if (input.equals("c")) {
 			score++;
-		}
-		return score;
+		}		return score;
 	}
 
 	public static int questionsNoviceCOR2(int score) {
@@ -119,6 +125,12 @@ public class NoviceQuestionBank {
 	}
 
 	public NoviceQuestionBank(int score) {
+		/*This method chooses the questions at random.
+		 * the count variables initialized below are to make sure a question is not chosen twice
+		 * if a question is chosen it's count is increased by one. Now this question cannot be chosen as it does not meet 
+		 * the requirements made in the if statement.
+		 * no question is chosen and the else is activated which reduces the variable i by 1 causing the loop to execute again
+		 * this continues until 2 unique questions are chosen*/
 
 		Random rand = new Random();
 		int count0=0;
