@@ -27,8 +27,9 @@ public class IntermediateQuestionBank {
 
 	public static int questionsIntermediateDM2(int score) {
 		System.out.printf("CATEGORY: Discrete Mathmatics\n"
-				+ "In a Knights and Knaves scenario. A and B. A says, \"B is a Knight.\" B says nothing.\n"
-				+ "Based on A's statement, which of the following conclusions can you draw about B?\n" 
+				+ "In a Knights and Knaves scenario. A and B. A says, \"A says \"We are the same kind.\"\" B says \"We are different kinds.\"\n"
+				+ "Based on A and B's statements, What can you conclude about A and B?\n"
+				+ "\n" 
 				+ "A. A is a Knight, and B is a Knight.\n"
 				+ "B. A is a Knight, and B is a Knave.\n" 
 				+ "C. A is a Knave, and B is a Knave.\n" 
@@ -127,8 +128,8 @@ public class IntermediateQuestionBank {
 		int count5=0;
 		int maximum = 5;
 		System.out.printf("|-----------------------------|\n" 
-				+ "|ROUND TWO LEVEL: INTERMEDIATE|\n"
-				+ "|-----------------------------|\n");
+						+ "|ROUND TWO LEVEL: INTERMEDIATE|\n"
+						+ "|-----------------------------|\n");
 		for (int i = 1; i <= 2; i++) {
 			System.out.printf("Question %d\n", i);
 			int questionNumber = rand.nextInt(maximum);
@@ -152,6 +153,7 @@ public class IntermediateQuestionBank {
 				score = questionsIntermediateCOR2(score);
 			}else {i--;}
 		}
+		
 		this.score=score;
 	}	
 
