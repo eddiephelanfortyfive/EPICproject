@@ -38,6 +38,7 @@ public class MainQuiz {
 				System.exit(0);
 				} else {
 					System.out.println("Invalid input");
+					System.exit(0);
 		}
 		
 		//Start questions
