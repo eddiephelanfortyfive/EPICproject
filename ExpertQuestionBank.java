@@ -10,6 +10,7 @@ public class ExpertQuestionBank {
 		
 		System.out.printf("CATEGORY: Discrete Maths\n"
 				+"Which of the following is a property of an equivalence relation in set theory?\n"
+				+ "\n"
 				+"	A. Reflexivity\n"
 				+ "\n"
 				+"	B. Injectivity\n"
