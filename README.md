@@ -1,2 +1,0 @@
-# EPICproject
-Quiz game
