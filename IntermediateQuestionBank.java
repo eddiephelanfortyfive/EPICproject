@@ -131,8 +131,8 @@ public class IntermediateQuestionBank {
 	public static int questionsIntermediateCOR2(int score) {
 
 		System.out.printf("CATEGORY: Computer Organisation \n"
-				+ "	\n"
-				+ "What is the purpose of the Arithmetic Logic Unit (ALU) in a CPU?\n" 
+				+ "What is the purpose of the Arithmetic Logic Unit (ALU) in a CPU?\n"
+				+ "\n" 
 				+ "A. To perform arithmetic and logical operations\n" 
 				+ "B. To store program instructions\n" 
 				+ "C. To manage memory allocation\n" 

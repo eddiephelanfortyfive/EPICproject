@@ -41,8 +41,8 @@ public class NoviceQuestionBank {
 	public static int questionsNoviceDM2(int score) {
 		System.out.printf("CATEGORY: Descrete Mathmatics\n"
 				+ "	What is the result of the following expression?\n"
-				+"\n"
-				+ "(A AND B) OR (NOT C)\n" 
+				+ "(A AND B) OR (NOT C)\n"
+				+ "\n" 
 				+ "A. True if A and B are both true, regardless of C. \n"
 				+ "B. True if either A and B are true or C is false.\n"
 				+ "C. True if A and B are both true and C is false. \n"
@@ -67,10 +67,10 @@ public class NoviceQuestionBank {
 		System.out.printf("CATEGORY: Computer Science Foundation\n"
 				+ "Which one of these statments relates to ¬(A∨B):\n"
 				+"\n"
-				+ "A: A AND B\n" 
-				+ "B: A OR B\n"
-				+ "C: The negation of A AND B\n"
-				+ "D: The negation of A OR B\n"
+				+ "A. A AND B\n" 
+				+ "B. A OR B\n"
+				+ "C. The negation of A AND B\n"
+				+ "D. The negation of A OR B\n"
 				+ "Enter answer:\n");
 		for (int i=0; i<1; i++) {
 			Scanner answer = new Scanner(System.in);
@@ -91,10 +91,10 @@ public class NoviceQuestionBank {
 		System.out.printf("CATEGORY: Computer Science Foundation\n"
 				+ "Which of the following is a universal set containing all the elements in a specific context?	\n"
 				+ "\n" 
-				+ "A.Power set \n" 
-				+ "B.Subset \n" 
-				+ "C.Conplament set \n" 
-				+ "D.Sample space \n"
+				+ "A. Power set \n" 
+				+ "B. Subset \n" 
+				+ "C. Conplament set \n" 
+				+ "D. Sample space \n"
 				+ "Enter answer:\n");
 		for (int i=0; i<1; i++) {
 			Scanner answer = new Scanner(System.in);
